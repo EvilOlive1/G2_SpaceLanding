@@ -1,0 +1,10 @@
+Things to figure out:
+1. Where to get audio, font, and graphics
+
+Surface:
+
+Display Surface: The game window. Anything displayed on here
+Regular Surface: Essentially a single image (something imported, rendered text or a plain color)
+
+Display Surface is always shown and theres only 1
+Regular Surface has no boundaries
