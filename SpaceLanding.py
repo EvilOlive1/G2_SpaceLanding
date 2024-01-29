@@ -6,7 +6,7 @@ pygame.init()
 
 # Creating the window
 screen = pygame.display.set_mode((800,400))
-pygame.display.set_caption("Space Landing")
+pygame.display.set_caption("Space Landingd")
 
 while True:
 	for event in pygame.event.get():
