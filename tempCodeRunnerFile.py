@@ -1,2 +1,2 @@
 
-screen = pygame.display.set_mode((800,400))
+	# Putting surface on another surface

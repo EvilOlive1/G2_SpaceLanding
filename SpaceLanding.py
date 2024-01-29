@@ -18,9 +18,15 @@ test_font = pygame.font.Font("Font/Pixeltype.ttf", 50)
 # test_surface = pygame.Surface((100,200))
 # test_surface.fill("Red")
 
-skySurface = pygame.image.load("Graphics/Sky.png")
-groundSurface = pygame.image.load("Graphics/ground.png")
+skySurface = pygame.image.load("Graphics/Sky.png").convert()
+groundSurface = pygame.image.load("Graphics/ground.png").convert()
 textSurface = test_font.render("Space Landing", False, "Black")
+
+snailSurface = pygame.image.load("Graphics/snail/snail1.png").convert_alpha()
+snailRect = snailSurface.get_rect(bottomright = (600,300))
+
+playerSurface = pygame.image.load("Graphics/Player/player_walk_1.png").convert_alpha()
+playerRect = playerSurface.get_rect(midbottom = (80,300))
 
 while True:
 	for event in pygame.event.get():
@@ -32,6 +38,12 @@ while True:
 	screen.blit(skySurface,(0,0))
 	screen.blit(groundSurface,(0,300))
 	screen.blit(textSurface,(300,50))
+
+	snailRect.x -= 4
+	if snailRect.right <= 0:
+		snailRect.left = 800
+	screen.blit(snailSurface,snailRect)
+	screen.blit(playerSurface, playerRect)
 	
 	pygame.display.update()
 	clock.tick(60)

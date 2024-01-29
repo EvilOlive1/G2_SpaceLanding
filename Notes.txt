@@ -8,3 +8,8 @@ Regular Surface: Essentially a single image (something imported, rendered text o
 
 Display Surface is always shown and theres only 1
 Regular Surface has no boundaries
+
+Rectangle:
+
+- Precise positioning of surfaces
+- 
