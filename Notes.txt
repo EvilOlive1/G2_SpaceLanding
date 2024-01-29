@@ -12,4 +12,7 @@ Regular Surface has no boundaries
 Rectangle:
 
 - Precise positioning of surfaces
-- 
+- Detecting collision
+
+LINK:
+https://www.youtube.com/watch?v=AY9MnQ4x3zk
