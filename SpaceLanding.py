@@ -14,17 +14,16 @@ clock = pygame.time.Clock()
 # Font setting
 test_font = pygame.font.Font("Font/Pixeltype.ttf", 50)
 
-# Test surface
-# test_surface = pygame.Surface((100,200))
-# test_surface.fill("Red")
-
+# Map Rectangle
 skySurface = pygame.image.load("Graphics/Sky.png").convert()
 groundSurface = pygame.image.load("Graphics/ground.png").convert()
 textSurface = test_font.render("Space Landing", False, "Black")
 
+# Snail Rectangle
 snailSurface = pygame.image.load("Graphics/snail/snail1.png").convert_alpha()
 snailRect = snailSurface.get_rect(bottomright = (600,300))
 
+# Player Rectangle
 playerSurface = pygame.image.load("Graphics/Player/player_walk_1.png").convert_alpha()
 playerRect = playerSurface.get_rect(midbottom = (80,300))
 
